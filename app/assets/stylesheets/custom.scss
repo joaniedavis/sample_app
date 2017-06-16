@@ -66,6 +66,11 @@ p {
   }
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 img {
   display: none;
 }
