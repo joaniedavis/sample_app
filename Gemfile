@@ -12,6 +12,10 @@ gem 'rails', '~> 5.1.1'
 gem 'jquery-rails'
 # Add bcrypt
 gem 'bcrypt', '>= 3.1.11'
+# Faker Gem to create fake users
+gem 'faker', '>=1.7.3'
+gem 'will_paginate',           '>= 2.3.15'
+gem 'bootstrap-will_paginate', '>=1.0.0'
 # Add bootstrap Gem
 gem 'bootstrap-sass', '~>3.3.7'
 # Use sqlite3 as the database for Active Record

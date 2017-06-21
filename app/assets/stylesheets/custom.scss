@@ -72,7 +72,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #23f;
+  color: #7e1;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -97,9 +97,10 @@ footer {
   border-top: 1px solid #eaeaea;
   color: #777;
   bottom: 0;
-  position: absolute;
+  position: initial;
+  background-attachment: scroll;
   display: flex;
-  width: 85%;
+  width: 100%;
 
   a {
     color: #555;
