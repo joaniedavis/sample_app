@@ -1,0 +1,23 @@
+.photos-stream {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .photo {
+
+  padding: 10px;
+  align-self: center;
+
+    img {
+      vertical-align: baseline;
+      max-height: 220px;
+    }
+
+    .Description {
+      font-size: 11px;
+      line-height: 2;
+      color: #9a9797;
+
+    }
+  }
+}
