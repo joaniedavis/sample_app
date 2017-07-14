@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'image_search/search'
+
   get 'sessions/new'
 
   get 'users/new'
@@ -7,6 +9,7 @@ Rails.application.routes.draw do
   get  '/help', to: 'static_pages#help'
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
+  get '/image_search', to: 'image_search#show'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
   get  '/login', to: 'sessions#new'

@@ -9,6 +9,7 @@
 
   <% if logged_in? %>
     <%= link_to image_tag("kitten.jpg", alt: "Kitten logo"), 'http://cdn.learnenough.com/kitten.jpg' %>
+    <%= link_to "Search for Images!", image_search_path, class: "btn btn-lg btn-primary" %>
     <% else %>
       <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
     <% end %>
