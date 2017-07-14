@@ -14,6 +14,9 @@ gem 'jquery-rails'
 gem 'bcrypt', '>= 3.1.11'
 # Faker Gem to create fake users
 gem 'faker', '>=1.7.3'
+# gem to manaage ENV variables
+gem 'figaro'
+
 gem 'will_paginate',           '>= 2.3.15'
 gem 'bootstrap-will_paginate', '>=1.0.0'
 # Add bootstrap Gem
@@ -26,6 +29,8 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+# Gem to connect to Unsplash free photos API
+gem 'unsplash'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
