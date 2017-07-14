@@ -1,0 +1,22 @@
+<h1>Image Search</h1>
+
+<%= form_tag(image_search_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search for images" %>
+<%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<div class="photos-stream">
+  <% if !@photos.empty? %>
+  <% @photos.each do |photo| %>
+  <div class="photo">
+    <% image_url = photo.links['html'] %>
+    <img src="<%= photo.urls['small']%>">
+    <div class="Description">
+      <p>
+        Photo by <%= link_to "#{photo.user.name}", image_url %>/Unsplash
+      </p>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>

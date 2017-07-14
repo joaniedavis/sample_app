@@ -1,0 +1,16 @@
+<h1>Image Search</h1>
+
+<% form_tag image_search_search_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<div class="photos">
+
+<img src="<%= @photo.urls['regular']%>">
+<%= @photos.each do |photo| %>
+  <img src="<%= photo.urls['regular']%>">
+<% end %>
+</div>
